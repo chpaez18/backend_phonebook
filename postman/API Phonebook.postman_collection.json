@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "63af2688-bc98-4ae4-a346-81c8e61f471b",
+		"name": "API Phonebook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Contactos",
+			"item": [
+				{
+					"name": "Add Record",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombres\":\"nombre 1\",\r\n    \"apellidos\":\"apellido 1\",\r\n    \"correo\":\"prueba@test.com\",\r\n    \"telefono_celular\":\"2222-22222-2222\",\r\n    \"telefono_habitacion\":null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api_phonebook/public/api/v1/contactos/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api_phonebook",
+								"public",
+								"api",
+								"v1",
+								"contactos",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Record",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombres\":\"nombre 1\",\r\n    \"apellidos\":\"apellido 1\",\r\n    \"correo\":\"prueba@test.com\",\r\n    \"telefono_celular\":\"2222-22222-2222\",\r\n    \"telefono_habitacion\":null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api_phonebook/public/api/v1/contactos/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api_phonebook",
+								"public",
+								"api",
+								"v1",
+								"contactos",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/api_phonebook/public/api/v1/contactos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api_phonebook",
+								"public",
+								"api",
+								"v1",
+								"contactos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Record",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/api_phonebook/public/api/v1/contactos/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api_phonebook",
+								"public",
+								"api",
+								"v1",
+								"contactos",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
