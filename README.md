@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-# api_nora
+# PhoneBook API
 
-Proyecto Api Nora - SILICE
+Proyecto Api Phonebook
 
 ## Getting started
 
